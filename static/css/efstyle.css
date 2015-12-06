@@ -329,7 +329,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #202020;
   background-color: #fff;
 }
 
@@ -343,11 +343,11 @@ textarea {
 }
 
 a {
-  color: #337ab7;
+  color: #000;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #23527c;
+  color: black;
   text-decoration: underline;
 }
 a:focus {
@@ -573,12 +573,12 @@ mark,
 }
 
 .text-primary {
-  color: #337ab7;
+  color: #000;
 }
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: black;
 }
 
 .text-success {
@@ -622,12 +622,12 @@ a.text-danger:focus {
 }
 
 .bg-primary {
-  background-color: #337ab7;
+  background-color: #000;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: black;
 }
 
 .bg-success {
@@ -2004,6 +2004,17 @@ address {
   .hidden-print {
     display: none !important;
   }
+}
+h1 {
+  color: #202020;
+}
+
+h2 {
+  color: #0e0905;
+}
+
+h3 {
+  color: #000;
 }
 
 /*# sourceMappingURL=efstyle.css.map */
