@@ -11,6 +11,25 @@ h3 {
     color: $brand-primary;
 }
 
+.post {
+    .tags,
+    .published,
+    .author a {
+        color: $gray-lighter;
+    }
+}
+#call-to-action {
+    background-color: $brand-info;
+}
+footer {
+    background-color: $brand-primary;
+    color: $gray-light;
+
+    h3 {
+        color: #FFF;
+    }
+}
+
 //== Typography
 h1, h2 {
     text-transform: uppercase;

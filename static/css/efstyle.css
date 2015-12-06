@@ -396,7 +396,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #a2988a;
 }
 
 .sr-only {
@@ -446,7 +446,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #777777;
+  color: #828282;
 }
 
 h1, .h1,
@@ -569,7 +569,7 @@ mark,
 }
 
 .text-muted {
-  color: #777777;
+  color: #828282;
 }
 
 .text-primary {
@@ -669,7 +669,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #a2988a;
 }
 
 ul,
@@ -743,7 +743,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #777777;
+  border-bottom: 1px dotted #828282;
 }
 
 .initialism {
@@ -754,7 +754,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #a2988a;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -767,7 +767,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857;
-  color: #777777;
+  color: #828282;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -779,7 +779,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #a2988a;
   border-left: 0;
   text-align: right;
 }
@@ -2015,6 +2015,24 @@ h2 {
 
 h3 {
   color: #000;
+}
+
+.post .tags,
+.post .published,
+.post .author a {
+  color: #a2988a;
+}
+
+#call-to-action {
+  background-color: #f1eae1;
+}
+
+footer {
+  background-color: #000;
+  color: #828282;
+}
+footer h3 {
+  color: #FFF;
 }
 
 h1, h2 {
