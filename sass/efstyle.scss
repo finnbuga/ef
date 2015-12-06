@@ -125,7 +125,7 @@ header {
         @extend .center-block;
     }
 }
-#featured {
+#featured-image {
     img {
         @extend .center-block;
     }
@@ -155,6 +155,20 @@ footer {
             p {
                 margin: 0;
             }
+        }
+    }
+}
+
+//== Grid
+#featured,
+#main {
+    @include container-fixed;
+
+    .inner {
+        @include make-row;
+
+        >* {
+            @include make-xs-column(12);
         }
     }
 }

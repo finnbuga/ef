@@ -1711,7 +1711,7 @@ address {
   clear: both;
 }
 
-.center-block, header #logo, #featured img {
+.center-block, header #logo, #featured-image img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -2140,6 +2140,48 @@ footer section.copyright {
 }
 footer section.copyright p {
   margin: 0;
+}
+
+#featured,
+#main {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#featured:before, #featured:after,
+#main:before,
+#main:after {
+  content: " ";
+  display: table;
+}
+#featured:after,
+#main:after {
+  clear: both;
+}
+#featured .inner,
+#main .inner {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#featured .inner:before, #featured .inner:after,
+#main .inner:before,
+#main .inner:after {
+  content: " ";
+  display: table;
+}
+#featured .inner:after,
+#main .inner:after {
+  clear: both;
+}
+#featured .inner > *,
+#main .inner > * {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=efstyle.css.map */
