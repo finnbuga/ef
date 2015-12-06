@@ -1,5 +1,21 @@
 @import "bootstrap";
 
+//== Mixins
+@mixin bottom-line($color) {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 40px;
+        border-bottom: 1px solid $color;
+    }
+}
+
 //== Colors
 h1 {
     color: $gray-dark;
@@ -18,6 +34,7 @@ h3 {
         color: $gray-lighter;
     }
 }
+
 #call-to-action {
     background-color: $brand-info;
 }
@@ -55,6 +72,7 @@ address {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 #call-to-action {
     font-size: 28px;
     font-family: "Helvetica";
@@ -65,5 +83,78 @@ footer {
 
     .copyright {
         font-size: 10px;
+    }
+}
+
+//== Layout
+img {
+    @extend .img-responsive;
+}
+blockquote {
+    margin: 3rem 0;
+    padding: 1.3em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0;
+}
+
+.post {
+    header {
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        @include bottom-line($gray-lighter);
+
+        h2 {
+            margin: .05em 0 .15em;
+        }
+    }
+}
+.read-more {
+    display: block;
+    margin-top: 2em;
+
+    &:after {
+        content: " >";
+    }
+}
+
+header {
+    margin: 2.5rem 0;
+
+    #logo {
+        @extend .center-block;
+    }
+}
+#featured {
+    img {
+        @extend .center-block;
+    }
+}
+#main {
+    margin-top: 8rem;
+}
+#call-to-action {
+    margin-top: 7rem;
+    padding: 1.9em 0 1.5em;
+    text-align: center;
+}
+footer {
+    text-align: center;
+
+    section {
+        padding-top: 1.3rem;
+        border-bottom: 1px solid #4C4C4C;
+
+        &.country {
+            display: none;
+        }
+
+        &.copyright {
+            padding: 2.5rem 0;
+
+            p {
+                margin: 0;
+            }
+        }
     }
 }
