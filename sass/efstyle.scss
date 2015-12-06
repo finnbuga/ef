@@ -42,7 +42,8 @@ footer {
     background-color: $brand-primary;
     color: $gray-light;
 
-    h3 {
+    h3,
+    .country a {
         color: #FFF;
     }
 }
@@ -81,6 +82,7 @@ address {
 footer {
     font-size: $font-size-small;
 
+    .country,
     .copyright {
         font-size: 10px;
     }

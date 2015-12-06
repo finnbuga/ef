@@ -2031,7 +2031,8 @@ footer {
   background-color: #000;
   color: #828282;
 }
-footer h3 {
+footer h3,
+footer .country a {
   color: #FFF;
 }
 
@@ -2072,6 +2073,7 @@ address {
 footer {
   font-size: 12px;
 }
+footer .country,
 footer .copyright {
   font-size: 10px;
 }
