@@ -2039,6 +2039,10 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: Arial, sans-serif;
+}
+
 blockquote {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
