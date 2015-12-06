@@ -2205,4 +2205,34 @@ footer .wrapper .inner > * {
   padding-right: 25px;
 }
 
+@media (min-width: 992px) {
+  #featured .inner > *,
+  #main .inner > * {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  footer .wrapper .inner > * {
+    display: block;
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    min-height: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  footer .wrapper .copyright {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 /*# sourceMappingURL=efstyle.css.map */

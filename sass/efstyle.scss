@@ -184,3 +184,23 @@ footer .wrapper {
         }
     }
 }
+
+@media(min-width:$screen-md-min) {
+    //== Grid
+    #featured,
+    #main {
+        .inner >* {
+            @include make-xs-column(6);
+        }
+    }
+
+    footer .wrapper {
+        .inner >* {
+            display: block;
+            @include make-xs-column(4);
+        }
+        .copyright {
+            @include make-xs-column(12);
+        }
+    }
+}
