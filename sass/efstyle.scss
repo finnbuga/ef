@@ -170,7 +170,8 @@ footer {
 
 //== Grid
 #featured,
-#main {
+#main,
+footer .wrapper {
     @include container-fixed;
 
     .inner {

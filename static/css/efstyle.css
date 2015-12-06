@@ -2153,7 +2153,8 @@ footer section.copyright p {
 }
 
 #featured,
-#main {
+#main,
+footer .wrapper {
   margin-right: auto;
   margin-left: auto;
   padding-left: 25px;
@@ -2161,31 +2162,39 @@ footer section.copyright p {
 }
 #featured:before, #featured:after,
 #main:before,
-#main:after {
+#main:after,
+footer .wrapper:before,
+footer .wrapper:after {
   content: " ";
   display: table;
 }
 #featured:after,
-#main:after {
+#main:after,
+footer .wrapper:after {
   clear: both;
 }
 #featured .inner,
-#main .inner {
+#main .inner,
+footer .wrapper .inner {
   margin-left: -25px;
   margin-right: -25px;
 }
 #featured .inner:before, #featured .inner:after,
 #main .inner:before,
-#main .inner:after {
+#main .inner:after,
+footer .wrapper .inner:before,
+footer .wrapper .inner:after {
   content: " ";
   display: table;
 }
 #featured .inner:after,
-#main .inner:after {
+#main .inner:after,
+footer .wrapper .inner:after {
   clear: both;
 }
 #featured .inner > *,
-#main .inner > * {
+#main .inner > *,
+footer .wrapper .inner > * {
   position: relative;
   float: left;
   width: 100%;
