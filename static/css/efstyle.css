@@ -2093,7 +2093,7 @@ blockquote {
 .post header:after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 15px;
   bottom: 0;
   height: 1px;
   width: 40px;
