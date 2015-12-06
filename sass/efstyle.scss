@@ -87,6 +87,12 @@ footer {
 }
 
 //== Layout
+h1 {
+    margin-bottom: 2.4rem;
+}
+p {
+    margin: 0 0 1.3em;
+}
 img {
     @extend .img-responsive;
 }
@@ -100,7 +106,6 @@ blockquote {
 
 .post {
     header {
-        padding-bottom: 1em;
         margin-bottom: 1em;
         @include bottom-line($gray-lighter);
 
@@ -131,12 +136,16 @@ header {
     }
 }
 #main {
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 #call-to-action {
-    margin-top: 7rem;
-    padding: 1.9em 0 1.5em;
+    margin-top: 4rem;
+    padding: 1.9em 0;
     text-align: center;
+
+    p {
+        margin: 0;
+    }
 }
 footer {
     text-align: center;
