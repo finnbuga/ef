@@ -2017,4 +2017,21 @@ h3 {
   color: #000;
 }
 
+h1, h2 {
+  text-transform: uppercase;
+}
+
+blockquote {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.1em;
+}
+
+address {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  line-height: 1.6em;
+}
+
 /*# sourceMappingURL=efstyle.css.map */

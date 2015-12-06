@@ -10,3 +10,19 @@ h2 {
 h3 {
     color: $brand-primary;
 }
+
+//== Typography
+h1, h2 {
+    text-transform: uppercase;
+}
+blockquote {
+    font-family: $font-family-serif;
+    font-style: italic;
+    font-size: $font-size-large;
+    line-height: 1.1em;
+}
+address {
+    font-family: $font-family-serif;
+    font-style: italic;
+    line-height: 1.6em;
+}
