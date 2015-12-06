@@ -2052,4 +2052,24 @@ address {
   line-height: 1.6em;
 }
 
+.tags,
+.read-more {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#call-to-action {
+  font-size: 28px;
+  font-family: "Helvetica";
+  font-weight: bold;
+}
+
+footer {
+  font-size: 12px;
+}
+footer .copyright {
+  font-size: 10px;
+}
+
 /*# sourceMappingURL=efstyle.css.map */

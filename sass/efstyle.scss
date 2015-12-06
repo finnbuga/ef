@@ -45,3 +45,22 @@ address {
     font-style: italic;
     line-height: 1.6em;
 }
+
+.tags,
+.read-more {
+    font-size: $font-size-small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#call-to-action {
+    font-size: 28px;
+    font-family: "Helvetica";
+    font-weight: bold;
+}
+footer {
+    font-size: $font-size-small;
+
+    .copyright {
+        font-size: 10px;
+    }
+}
