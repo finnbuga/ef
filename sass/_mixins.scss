@@ -1,0 +1,14 @@
+@mixin bottom-line($color) {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: $grid-gutter-width / 2;
+        bottom: 0;
+        height: 1px;
+        width: 40px;
+        border-bottom: 1px solid $color;
+    }
+}

@@ -1,23 +1,8 @@
 @import "bootstrap";
 
-//== Mixins
-@mixin bottom-line($color) {
-    position: relative;
-    z-index: 1;
-
-    &:after {
-        content: "";
-        position: absolute;
-        left: $grid-gutter-width / 2;
-        bottom: 0;
-        height: 1px;
-        width: 40px;
-        border-bottom: 1px solid $color;
-    }
-}
-
-//== Variables
-$width: 980px;
+@import "variables";
+@import "mixins";
+@import "slider";
 
 //== Colors
 h1 {
@@ -295,26 +280,6 @@ footer .wrapper {
         }
         .copyright {
             @include make-xs-column(12);
-        }
-    }
-}
-
-//== Slider
-.slider {
-    overflow: hidden;
-
-    ul {
-        position: relative;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        -webkit-transition: 0.5s left;
-        -moz-transition: 0.5s left;
-        -ms-transition: 0.5s left;
-        -o-transition: 0.5s left;
-
-        li {
-            float: left;
         }
     }
 }
