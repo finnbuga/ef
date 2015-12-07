@@ -2087,7 +2087,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3rem 0 4.5rem;
   padding: 1.3em 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -2124,13 +2124,17 @@ header {
   margin: 2.5rem 0;
 }
 
+#featured-image {
+  padding: 0 !important;
+}
+
 #main {
   margin-top: 7rem;
 }
 
 #call-to-action {
-  margin-top: 4rem;
-  padding: 1.9em 0;
+  margin-top: 2rem;
+  padding: 1.7em 0;
   text-align: center;
 }
 #call-to-action p {
@@ -2206,6 +2210,31 @@ footer .wrapper .inner > * {
 }
 
 @media (min-width: 992px) {
+  blockquote {
+    font-size: 28.8px;
+    line-height: 1.2em;
+  }
+
+  #featured header {
+    margin-top: 6rem;
+  }
+
+  #main aside {
+    margin-top: 30px;
+    padding-top: 2.4rem;
+  }
+
+  footer section {
+    border-bottom: none;
+  }
+  footer section.country {
+    display: block;
+    margin-top: 2rem;
+  }
+  footer section.copyright {
+    border-top: 1px solid #4C4C4C;
+  }
+
   #featured .inner > *,
   #main .inner > * {
     position: relative;

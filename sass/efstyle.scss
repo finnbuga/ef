@@ -99,7 +99,7 @@ img {
     @extend .img-responsive;
 }
 blockquote {
-    margin: 3rem 0;
+    margin: 3rem 0 4.5rem;
     padding: 1.3em 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -133,6 +133,7 @@ header {
     }
 }
 #featured-image {
+    padding: 0 !important;
     img {
         @extend .center-block;
     }
@@ -141,8 +142,8 @@ header {
     margin-top: 7rem;
 }
 #call-to-action {
-    margin-top: 4rem;
-    padding: 1.9em 0;
+    margin-top: 2rem;
+    padding: 1.7em 0;
     text-align: center;
 
     p {
@@ -186,6 +187,39 @@ footer .wrapper {
 }
 
 @media(min-width:$screen-md-min) {
+    //== Typography
+    blockquote {
+        font-size: $font-size-large * 1.2;
+        line-height: 1.2em;
+    }
+
+    //== Layout
+    #featured {
+        header {
+            margin-top: 6rem;
+        }
+    }
+    #main {
+        aside {
+            margin-top: $font-size-h1;
+            padding-top: 2.4rem;
+        }
+    }
+    footer {
+        section {
+            border-bottom: none;
+
+            &.country {
+                display: block;
+                margin-top: 2rem;
+            }
+
+            &.copyright {
+                border-top: 1px solid #4C4C4C;
+            }
+        }
+    }
+
     //== Grid
     #featured,
     #main {
