@@ -147,7 +147,10 @@ header {
     text-align: center;
 
     p {
+        display: inline-block;
         margin: 0;
+        padding-left: 60px;
+        background: url('../images/icons/telephone.png') no-repeat left center;
     }
 }
 footer {
@@ -157,10 +160,39 @@ footer {
         padding-top: 1.3rem;
         border-bottom: 1px solid #4C4C4C;
 
+        &.social-media ul {
+            list-style-type: none;
+            margin-top: 1.5rem;
+            padding: 0;
+
+            li {
+                display: inline-block;
+            }
+            a {
+                display: block;
+                width: 34px;
+                height: 34px;
+                @include border-right-radius(17px);
+                @include border-left-radius(17px);
+                background: #282828 no-repeat center center;
+
+                &.facebook {
+                    background-image: url('../images/icons/youtube.png');
+                }
+                &.instagram {
+                    background-image: url('../images/icons/instagram.png');
+                }
+                &.twitter {
+                    background-image: url('../images/icons/twitter.png');
+                }
+                &.youtube {
+                    background-image: url('../images/icons/youtube.png');
+                }
+            }
+        }
         &.country {
             display: none;
         }
-
         &.copyright {
             padding: 2.5rem 0;
 
@@ -188,9 +220,20 @@ footer .wrapper {
 
 @media(min-width:$screen-md-min) {
     //== Typography
+    h3 {
+        font-size: $font-size-base;
+    }
     blockquote {
         font-size: $font-size-large * 1.2;
         line-height: 1.2em;
+    }
+    footer {
+        font-size: $font-size-base;
+
+        .country,
+        .copyright {
+            font-size: $font-size-small;
+        }
     }
 
     //== Layout
@@ -215,6 +258,8 @@ footer .wrapper {
             }
 
             &.copyright {
+                margin-top: 3rem;
+                padding: 4rem 0;
                 border-top: 1px solid #4C4C4C;
             }
         }
