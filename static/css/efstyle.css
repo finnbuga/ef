@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -2125,6 +2124,10 @@ header {
   margin: 2.5rem 0;
 }
 
+#banner {
+  display: none;
+}
+
 #featured-image {
   padding: 0 !important;
 }
@@ -2192,6 +2195,7 @@ footer section.copyright p {
   margin: 0;
 }
 
+#banner,
 #featured,
 #main,
 footer .wrapper {
@@ -2199,8 +2203,11 @@ footer .wrapper {
   margin-left: auto;
   padding-left: 25px;
   padding-right: 25px;
+  max-width: 980px;
 }
-#featured:before, #featured:after,
+#banner:before, #banner:after,
+#featured:before,
+#featured:after,
 #main:before,
 #main:after,
 footer .wrapper:before,
@@ -2208,18 +2215,22 @@ footer .wrapper:after {
   content: " ";
   display: table;
 }
+#banner:after,
 #featured:after,
 #main:after,
 footer .wrapper:after {
   clear: both;
 }
+#banner .inner,
 #featured .inner,
 #main .inner,
 footer .wrapper .inner {
   margin-left: -25px;
   margin-right: -25px;
 }
-#featured .inner:before, #featured .inner:after,
+#banner .inner:before, #banner .inner:after,
+#featured .inner:before,
+#featured .inner:after,
 #main .inner:before,
 #main .inner:after,
 footer .wrapper .inner:before,
@@ -2227,11 +2238,13 @@ footer .wrapper .inner:after {
   content: " ";
   display: table;
 }
+#banner .inner:after,
 #featured .inner:after,
 #main .inner:after,
 footer .wrapper .inner:after {
   clear: both;
 }
+#banner .inner > *,
 #featured .inner > *,
 #main .inner > *,
 footer .wrapper .inner > * {
@@ -2259,6 +2272,13 @@ footer .wrapper .inner > * {
   footer .country,
   footer .copyright {
     font-size: 12px;
+  }
+
+  #banner {
+    display: block;
+  }
+  #banner .slider {
+    padding: 0 !important;
   }
 
   #featured header {
@@ -2311,13 +2331,10 @@ footer .wrapper .inner > * {
     padding-right: 25px;
   }
 }
-#slider {
-  max-width: 980px;
-  max-height: 445px;
+.slider {
   overflow: hidden;
 }
-#slider ul {
-  /* styled by JS to match the added width and height of all <li>’s */
+.slider ul {
   position: relative;
   list-style: none;
   margin: 0;
@@ -2327,10 +2344,8 @@ footer .wrapper .inner > * {
   -ms-transition: 0.5s left;
   -o-transition: 0.5s left;
 }
-#slider ul li {
+.slider ul li {
   float: left;
-  max-width: 980px;
-  max-height: 445px;
 }
 
 /*# sourceMappingURL=efstyle.css.map */

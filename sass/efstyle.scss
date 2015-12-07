@@ -16,6 +16,9 @@
     }
 }
 
+//== Variables
+$width: 980px;
+
 //== Colors
 h1 {
     color: $gray-dark;
@@ -132,6 +135,9 @@ header {
         @extend .center-block;
     }
 }
+#banner {
+    display: none;
+}
 #featured-image {
     padding: 0 !important;
     img {
@@ -204,10 +210,12 @@ footer {
 }
 
 //== Grid
+#banner,
 #featured,
 #main,
 footer .wrapper {
     @include container-fixed;
+    max-width: $width;
 
     .inner {
         @include make-row;
@@ -237,6 +245,13 @@ footer .wrapper {
     }
 
     //== Layout
+    #banner {
+        display: block;
+
+        .slider {
+            padding: 0 !important;
+        }
+    }
     #featured {
         header {
             margin-top: 6rem;
@@ -285,13 +300,10 @@ footer .wrapper {
 }
 
 //== Slider
-#slider {
-    max-width: 980px;
-    max-height: 445px;
+.slider {
     overflow: hidden;
 
     ul {
-        /* styled by JS to match the added width and height of all <li>’s */
         position: relative;
         list-style: none;
         margin: 0;
@@ -303,8 +315,6 @@ footer .wrapper {
 
         li {
             float: left;
-            max-width: 980px;
-            max-height: 445px;
         }
     }
 }

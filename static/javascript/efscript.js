@@ -37,6 +37,6 @@ function Slider(el) {
 }
 
 window.onload = function(e) {
-  var slider = new Slider(document.getElementById("slider"));
+  var slider = new Slider(document.getElementsByClassName("slider")[0]);
   window.setInterval(function(){ slider.goToNext() }, 2000);
 }
